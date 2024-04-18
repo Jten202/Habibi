@@ -1,0 +1,173 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bodoni Moda', serif;
+    color: #fff;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bday.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    perspective: 1000px;
+}
+.card{
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    top: 160px;
+    left: 100px;
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+
+.block{
+    position: absolute;
+    top:200px;
+    right: 600px;
+    perspective: 800px;
+}
+.outside,.inside{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.outside{
+    background-color: #aa8cfa;
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+    position: absolute;
+
+}
+.outside h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 30px;
+}
+.inside{
+    background-color: rgb(255, 244, 79);
+    box-shadow: inset 0 5px 10px rgba(0,0,0,0.5);
+
+}
+.inside h3{
+    font-size: 1.2rem;
+    font-weight: 100px;
+    margin-top: 20px;
+    color: #fff;
+}
+.frames{
+    width: 400px;
+    height: 150px;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.8rem;
+    transform: rotateY(-190deg) rotateX(20deg);
+    position: absolute;
+
+}
+
+.frames img{
+    width: 125px;
+    
+    border-radius: 40%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.frames p{
+   font-size: 20px;
+   font-weight: bold;
+   transform: rotateY(180deg);
+}
+.frames:nth-child(1)
+{
+    top:-150px;
+    z-index: -1;
+    background-color: coral;
+}
+.frames:nth-child(2){
+    background-color: goldenrod;
+}
+.frames:nth-child(3)
+{
+    top:150px;
+    background-color: burlywood;
+}
+
+#imagenes-nuevas{
+    display: flex;
+    width: 45rem;
+    height: 40rem;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 2vh;
+    left: 35rem;
+    background-color: #8e6995;
+    border-radius: 30px;
+}
+.imagen-duo{
+    display: flex;
+    width: 30rem;
+    align-items: center;
+}
+.new-imagenes{
+    padding: 20px;
+    text-align: center;
+    width: 15rem;
+}
+
+.imagen-sola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8e6995;
+    border-radius: 30px;
+}
+
+.pareja{
+    width: 90%;
+    padding: 0;
+    margin: 0 0 30px 0;
+    border-radius: 30px;
+}
+
+.nutricion{
+    width: 400px;
+    border-radius: 30px;
+}
+.uñas{
+    border-radius: 30px;
+}
+.imagen1{
+    width: 130px;
+    height: 130px;   
+}
+.imagen2{
+    width: 10px;
+    height: 130px;
+}
+.imagen3{
+    width: 100px;
+    height: 130px;
+}
+.cake{
+    position: relative;
+    width: 20rem;
+    left: 82rem;
+    bottom: 6rem;
+    border-radius: 50%;
+}
